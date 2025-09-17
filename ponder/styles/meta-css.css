@@ -1,0 +1,31 @@
+body {
+    background-color: #ccc;
+    font-size: 20px;
+}
+#content {
+    text-align: center;
+    max-width: 60%;
+    margin: 40px auto;
+    padding: 0 60px 30px 60px;
+    border: 1px solid black;
+}
+img {
+    width: 65%;
+}
+.blue {
+    color: #035f9c;
+}
+hr {
+    width: 80%;
+    margin: 30px auto;
+}
+
+.list{
+    list-style-type: none;
+    text-align: left;
+}
+
+#topics {
+    width: 80%;
+    margin: 0 auto;
+}
