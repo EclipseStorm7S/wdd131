@@ -27,3 +27,45 @@ if (true) {
 }
 console.log(course); //works fine, course is global
 //console.log(student); //does not work, can't access a block variable outside the block
+
+/*
+document.querySelector("#hi") is the same as document.getElementById("hi")
+document.querySelector(".hi") is the same as document.getElementByClassName("hi")
+document.querySelector("hi") is the same as document.getElementByTagName("hi")
+
+
+element.innerHTML = "<p>New content muwahahaha</p>";
+element.innerText = "New text content"; (includes hidden elements, like \n)
+element.textContent = "New text content";
+inputElement.value = "new input value"; (usually read rather than written)
+
+element.style.color = "blue";
+element.style.backgroundColor = "yellow";
+element.style.fontSize = "20px";
+
+element.className = "newClass";
+element.classList.add("newClass");
+element.classList.remove("newClass");
+element.classList.toggle("newClass"); (add or remove)
+
+const newPara = document.createElement("p");
+newPara.textContent = "this is a new paragraph";
+const container = document.getElementById("container");
+container.appendChild(newPara);
+
+element.setAttribute("src", "new-image.png");
+element.getAttribute("src");
+*/
+
+
+let selectElem = document.getElementById('webdevlist');
+let h2 = document.querySelectorAll('h2');
+selectElem.addEventListener('change', function(){
+    let codeValue = selectElem.value;
+    console.log(codeValue);
+    h2.forEach(i => {
+        i.style.color = 'black';
+    });
+    document.getElementById(codeValue).style.color = 'red';
+})
+                
