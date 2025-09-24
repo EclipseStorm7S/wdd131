@@ -68,4 +68,11 @@ selectElem.addEventListener('change', function(){
     });
     document.getElementById(codeValue).style.color = 'red';
 })
-                
+
+
+const image = document.querySelector('img');
+image.setAttribute('src', 'images/HJC.png');
+image.setAttribute('alt', 'Cool logos 2.0!');
+
+//document.body.className = 'blue';
+document.body.style.backgroundColor = 'lightblue';
