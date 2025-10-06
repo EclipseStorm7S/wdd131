@@ -25,24 +25,33 @@ section {
 nav a {
     padding: 20px;
     color: black;
+    display: block;
+    /* border: 1px solid black; */
+}
+nav {
+    text-align: center;
+}
+.hide{
     display: none;
 }
 nav a:hover {
     text-decoration: none;
     color: #616061;
 }
-.menu-btn {
+#menu-btn {
     cursor: pointer;
     border: none;
     background-color: transparent;
 }
 .bar1, .bar3 {
+    transition: ease-in-out 0.3s;
     width: 30px;
     height: 4px;
     background-color: black;
     margin: 5px 0;
 }
 .bar2 {
+    transition: ease-in-out 0.3s;
     width: 22px;
     height: 4px;
     background-color: black;
@@ -55,14 +64,28 @@ main {
     display: grid;
 }
 
+.change * {
+    transition: ease-in-out 0.3s;
+}
+.change .bar1 {
+  transform: translate(0, 9px) rotate(-135deg);
+}
+.change .bar2 {opacity: 0;}
 
+.change .bar3 {
+  transform: translate(0, -9px) rotate(135deg);
+}
+          
 
 @media screen and (min-width: 700px) {
-    .menu-btn {
+    #menu-btn {
         display: none;
     }
     nav a {
         display: inline;
+    }
+    .hide{
+        display: block;
     }
     nav {
         text-align: right;
@@ -70,6 +93,7 @@ main {
     main {
         grid-template-columns: 1fr 1fr;
     }
+    
 
 }
 
