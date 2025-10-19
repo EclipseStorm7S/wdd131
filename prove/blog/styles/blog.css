@@ -1,0 +1,48 @@
+header, footer {
+    padding: 1rem;
+    text-align: center;
+}
+
+header nav{
+    border-top: 2px solid gold;
+    border-bottom: 2px solid gold;
+    padding: 20px 10px;
+    text-align: right;
+    color: #b70000;
+}
+header nav a{
+    padding: 0 10px;
+}
+footer{
+    border-top: 2px solid gold;
+}
+.book{
+    display: grid;
+}
+.book img{
+    justify-self: center;
+    max-width: 40%;
+}
+h2{
+    color: #b70000;
+}
+.details{
+    margin: 0 50px;
+    text-align: right;
+}
+
+@media (min-width: 600px) {
+    .book{
+        grid-template-columns: 1fr 4fr;
+        justify-content: center;
+    }
+    .details{
+        grid-row: 1/4;
+        grid-column: 1/2;
+        padding-right: 30px;
+        border-right: 2px solid gold;
+        margin-right: 30px;
+    }
+
+}
+          
