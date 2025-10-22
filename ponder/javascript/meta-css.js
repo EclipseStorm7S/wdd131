@@ -55,6 +55,47 @@ container.appendChild(newPara);
 
 element.setAttribute("src", "new-image.png");
 element.getAttribute("src");
+
+
+//arrays
+const nums = [1, 2, 3, 4, 5];
+nums.forEach(woah);
+function woah(item){
+    run for each item in array
+}
+
+const nums2 = nums.map(wow)
+function wow(item){
+    return items * 2
+}
+
+nums.filter(test)
+function test(item){
+    return item >== 3; //bool
+}
+
+nums.reduce(totalnums)
+function totalnums(total, item){ //total is equal to the previous call's return value.
+    return total + item
+}
+    //also:
+nums.reduce(function(total, item){
+    return total + item
+})
+function 
+
+//object (more like a dict)
+let product = {
+    id: 100,
+    name: "lamp",
+    price: 9.99,
+    quantity: 2,
+    getTotal: function(){
+        return this.price * this.quantity;
+    }
+
+}
+
 */
 
 
