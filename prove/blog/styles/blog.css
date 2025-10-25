@@ -18,6 +18,8 @@ footer{
 }
 .book{
     display: grid;
+    padding: 10px 0;
+    border-top: 2px solid gold;
 }
 .book img{
     justify-self: center;
@@ -35,6 +37,7 @@ h2{
     .book{
         grid-template-columns: 1fr 4fr;
         justify-content: center;
+        border-top: 0px solid gold;
     }
     .details{
         grid-row: 1/4;
