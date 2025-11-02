@@ -1,0 +1,48 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Credit Cards">
+    <meta name="author" content="Ethan Showers"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Credit Card info</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="mask-icon" href="favicon.ico" color="#000000">
+    <link rel="stylesheet" href="styles/form.css"/>
+    <script src="javascript/form.js" defer></script>
+  </head>
+  <body>
+    <section class="errors"></section>
+    <form id="cardDetails" action="" method="get">
+        <div id="cardBack">
+            <div id="bar">
+
+            </div>
+            <div id="CVCWrapper">
+                <label for="cvc">CVC/CVV</label>
+                <input type='text' id='cvcNum' name="cvcNum" placeholder="420" aria-labelledby="cvc">
+            </div>
+        </div>
+        <div id="cardFront">
+            <div id="total">
+                <p>TOTAL: $199</p>
+            </div>
+            <div>
+                <p id="emoji">💳</p>
+            </div>
+            <div id="cardNumberWrapper">
+                <label for="number">CARD NUMBER</label>
+                <input type='text' id='cardNumber' name="cardNumber" placeholder="4206 9420 6942 0694" aria-labelledby="number">
+            </div>
+            <br>
+            <div id="cardHolderWrapper">
+                <label for="holder">CARD HOLDER</label>
+                <input type='text' id='cardHolder' name="cardHolder" placeholder="Carl Wheezer" aria-labelledby="holder">
+            </div>
+            <div id="cardExpirationWrapper">
+                <label for="expirationDate">EXPIRATION</label>
+                <input type='text' id='month' name="expMonth" placeholder="MM" aria-labelledby="expirationDate">
+                <input type='text' id='year' name="expYear" placeholder="YY" aria-labelledby="expirationDate">
+            </div>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+  </body>
