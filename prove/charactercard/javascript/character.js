@@ -1,3 +1,18 @@
+class Character {
+    constructor(charName, charClass, health, maxhealth, lvl, image, imgalt, bgc, txtc){
+        this.name = charName;
+        this.class = charClass;
+        this.health = health;
+        this.maxhealth = maxhealth;
+        this.lvl = lvl;
+        this.image = image;
+        this.imgalt = imgalt;
+        this.bgc = bgc;
+        this.txtc = txtc;
+    }
+}
+
+
 const SlimeWizard = {
     name: "Toddriguez",
     class: "Slime Wizard",
