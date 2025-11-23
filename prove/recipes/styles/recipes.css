@@ -11,7 +11,7 @@ header img{
     width: 130px;
     height: 130px;
 }
-nav form{
+nav #searchbar{
     margin: 0 auto;
     display: flex;
     width: 70%;
@@ -56,6 +56,10 @@ nav button {
     background-color: rgb(234, 234, 234);
     box-shadow: 0 0 2px grey;
     width: fit-content;
+}
+.tags {
+    display:  flex;
+    gap: 10px;
 }
 h2 {
     color: rgb(77, 164, 198);
