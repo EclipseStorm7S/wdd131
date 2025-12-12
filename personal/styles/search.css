@@ -1,0 +1,178 @@
+header{
+    background-color: #bb0e0e;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+h1{
+    font-size: 3em;
+}
+nav {
+    background-color: #222;
+    margin: 0;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    padding: 10px;
+    align-items: center;
+    margin: 0;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    width:100%;
+    height:100%;
+    font-size: 1.2em;
+}
+#results {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 40px;
+    margin: auto 60px;
+    image-rendering: pixelated;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer{
+    margin:0;
+    background-color: #396e94;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    position: sticky;
+    bottom: 0px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.card{
+
+    width: 70%;
+    box-sizing: border-box;
+    margin: 10px auto;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    flex: 1 1 200px;
+}
+
+#searchbar{
+    margin: 20px auto;
+    display: flex;
+    width: 70%;
+    border-radius: 10px;
+    border: 2px solid black;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+#searchbar input{
+    flex: 1 1 250px;
+    font-size: 1.2em;
+}
+#searchbar button {
+    padding: 4px;
+    height: 50px;
+    border-width: 0;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+#searchbar button p {
+    font-size: 1.3em;
+    margin: auto 5px;
+}
+#searchbar button {
+    border-left: 1px solid black;
+}
+.types, .pokemonDescription{
+    display: none;
+}
+h2{
+    text-align: center;
+}
+
+/* MODAL */
+dialog img {
+    height: 100%;
+    object-fit: contain;
+    max-height: 100%;
+    max-width: 100%;
+    margin: auto;
+    image-rendering: pixelated;
+    display: block;
+    /* background-color: #141414; */
+    border: 5px solid white;
+    box-sizing: border-box;
+    background-image: radial-gradient(#242424, #000 );
+}
+dialog {
+    color: white;
+    width: 90%;
+    height: 90%;
+    background-color: #bb0e0e;
+    display: none;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 0.2fr 1fr;
+    gap: 10px;
+}
+.close-viewer {
+    position: absolute;
+    top: 5vh;
+    right: 2vh;
+    padding: 3px 6px;
+    font-size: 1.5em;
+}
+#Mtypes {
+    display:  flex;
+    gap: 10px;
+}
+
+#Mtypes > *{
+    color: white;
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid grey;
+    background-color: #2a5b7e;
+    box-shadow: 0 0 2px grey;
+    width: fit-content;
+}
+#Mdescription {
+    border-radius: 2px;
+    border: 3px solid white;
+    background-color: #141414;
+    box-shadow: 0 0 2px grey;
+    padding: 7px;
+    color: white;
+}
+#Mname {
+    margin: auto 0;
+    display: flex;
+    align-content: baseline;
+    justify-content: center;
+
+}
+
+@media screen and (min-width: 700px){
+    nav ul {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    dialog {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        height: 70%;
+    }
+
+    #Mname {
+        grid-row: 2/3;
+    }
+}

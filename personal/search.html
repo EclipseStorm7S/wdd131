@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Pokemon! Gotta Catch most of 'em!">
+    <meta name="author" content="Ethan Showers"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PokeyDecks</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="mask-icon" href="favicon.ico" color="#000000">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- <link rel="stylesheet" href="styles/style.css"/> -->
+    <link rel="stylesheet" href="styles/search.css"/>
+    <script src="javascript/search.js" defer></script>
+
+    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Pokemon! Gotta Catch most of 'em!">
+    <meta property="og:description" content="The game known to man.">
+    <meta property="og:url" content="https://eclipsestorm7s.github.io/wdd131/prove/recipes/">
+    <meta property="og:image" content="https://eclipsestorm7s.github.io/wdd131/prove/recipes/images/AppleTouch.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pokemon! Gotta Catch most of 'em!">
+    <meta name="twitter:description" content="The game known to man.">
+    <meta name="twitter:image" content="https://eclipsestorm7s.github.io/wdd131/prove/recipes/images/AppleTouch.png">
+
+    <!-- One Apple Touch Icon (iOS home screen) -->
+    <link rel="apple-touch-icon" href="/images/AppleTouch.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/LogoTransparentSmall.png" alt="Site Logo">
+        <h1>PokeyDecks</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/personal/">Home</a></li>
+            <li><a href="/personal/search.html">Search</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="searchbar">
+            <input id="searchparameters" placeholder="Pokemon name or number">
+            <button>
+                <p>Search!</p>
+            </button>
+        </div>
+        <div id="results">
+
+        </div>
+    </main>
+    <footer>
+        <p>
+            Pokémon &copy; Nintendo
+        </p>
+        <p>
+            Everything else &copy; Ethan Showers 2025
+        </p>
+    </footer>
+    <dialog>
+        <img>
+        <h2 id="Mname"></h2>
+        <div id="Mdetails">
+            <div id="Mtypes"></div>
+            <div id="Mdescription"></div>
+        </div>
+        <button class="close-viewer">X</button>
+    </dialog>
+</body>
+</html>
