@@ -5,6 +5,12 @@ header{
     align-items: center;
     justify-content: space-evenly;
 }
+header img{
+    height: 100%;
+}
+header h1{
+    height: 100%;
+}
 h1{
     font-size: 3em;
 }
