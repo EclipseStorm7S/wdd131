@@ -29,12 +29,6 @@ async function startUp(){
 
     randomNum = Math.floor(Math.random() * MainDex.pokemon_entries.length);
     renderCard(await accessAPI(MainDex.pokemon_entries[randomNum].pokemon_species.url));
-
-    randomNum = Math.floor(Math.random() * MainDex.pokemon_entries.length);
-    renderCard(await accessAPI(MainDex.pokemon_entries[randomNum].pokemon_species.url));
-
-    randomNum = Math.floor(Math.random() * MainDex.pokemon_entries.length);
-    renderCard(await accessAPI(MainDex.pokemon_entries[randomNum].pokemon_species.url));
 }
 
 

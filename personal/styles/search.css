@@ -68,7 +68,7 @@ footer{
     display: flex;
     flex-direction: column;
     justify-items: center;
-    flex: 1 1 200px;
+    flex: 0.1 1 200px;
 }
 
 #searchbar{
